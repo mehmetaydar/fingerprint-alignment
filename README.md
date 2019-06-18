@@ -14,6 +14,15 @@ Some implementations of fingerprint recognition algorithms. The base code for fi
 ### How to use it
 First pre-process the fingerprint image using ```python mextract.py images/101_1.tif 1 16 --preprocess --smooth --save ``` (note that 1 is tolerance for corepoint detection and 16 is the blocksize.) And then to align the preprocessed image and to extract the minutiaes points to a file use: ```python mextract.py images/101_1.tif 1 16 --smooth --save ```. The enhanced, aligned fingerprint images and the extracted minutiaes will be saved in the same directory (images/) of the fingerprint template.
 
+Images:
+* Before
+
+![before](https://github.com/mehmetaydar/fingerprint-alignment/blob/master/images/101_1.tif?raw=true)
+
+* After:
+
+![after](https://github.com/mehmetaydar/fingerprint-alignment/blob/master/images/101_1_enhanced_thinned_minutiaes_aligned.png?raw=true)
+
 ## Algorithms
 You can visit https://github.com/rtshadow/biometrics for more explanation.
 
