@@ -1,20 +1,21 @@
-# Fingerprint recognition algorithms
-
-Active development year: 2012
+# Fingerprint recognition and alignment algorithms
 
 ## Summary
-Some implementations of fingerprint recognition algorithms developed for Biometric Methods course at University of Wrocław, Poland.
+Some implementations of fingerprint recognition algorithms. The base code for fingerpint enhancement, thinnging, core point detection and minutiaes extraction is taken from https://github.com/rtshadow/biometrics. We have added fingerprint alignment based on core points part.
 
 ## Usage
 
 ### Prerequisites
 * python 2.7
 * python imaging library (PIL)
+* numpy
+* matplotlib
 
 ### How to use it
-Simply do ```python filename.py --help``` to figure out how to execute ```filename``` algorithm
+First pre-process the fingerprint image using ```python mextract.py images/101_1.tif 1 16 --preprocess --smooth --save ``` (note that 1 is tolerance for corepoint detection and 16 is the blocksize.) And then to align the preprocessed image and to extract the minutiaes points to a file use: ```python mextract.py images/101_1.tif 1 16 --smooth --save ```. 
 
 ## Algorithms
+You can visit https://github.com/rtshadow/biometrics for more explanation.
 
 ### Poincaré Index
 Finds singular points on fingerprint. 
