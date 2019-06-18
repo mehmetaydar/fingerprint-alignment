@@ -1,7 +1,7 @@
 # Fingerprint recognition and alignment algorithms
 
 ## Summary
-Some implementations of fingerprint recognition algorithms. The base code for fingerpint enhancement, thinnging, core point detection and minutiaes extraction is taken from https://github.com/rtshadow/biometrics. We have added fingerprint alignment based on core points part.
+Some implementations of fingerprint recognition algorithms. The base code for fingerpint enhancement, thinning, core point detection and minutiaes extraction is taken from https://github.com/rtshadow/biometrics. We have added fingerprint alignment based on core points part.
 
 ## Usage
 
