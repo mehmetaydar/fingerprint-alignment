@@ -1,7 +1,7 @@
 # Fingerprint recognition and alignment algorithms
 
 ## Summary
-Some implementations of fingerprint recognition algorithms. The base code for fingerpint enhancement, thinning, core point detection and minutiaes extraction is taken from https://github.com/rtshadow/biometrics. We have added fingerprint alignment based on core points part.
+Some implementations of fingerprint recognition algorithms. The base code for fingerpint enhancement, thinning, core point detection and minutiaes extraction is taken from https://github.com/rtshadow/biometrics. We have added fingerprint alignment based on core points part. Alignment is necessary for cancellable biometrics transformation systems such as cartesian transformation.
 
 ## Usage
 
@@ -17,7 +17,7 @@ First pre-process the fingerprint image using ```python mextract.py images/101_1
 Images:
 * Before
 
-![before](https://github.com/mehmetaydar/fingerprint-alignment/blob/master/images/101_1.tif?raw=true)
+![before](https://github.com/mehmetaydar/fingerprint-alignment/blob/master/images/101_1.png?raw=true)
 
 * After:
 
